@@ -1,6 +1,6 @@
 <?php
 
-namespace ArcheNS\Widgets\Presets;
+namespace Arche\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\Factories\PresetWidgetFactory;
@@ -33,7 +33,7 @@ class DefaultHomepagePreset implements ContentPreset
 
 
         $this->setupImageBoxWidget($this->preset->createWidget("Ceres::ImageBoxWidget"));
-        $this->preset->createWidget("ArcheNS::ImageListWidget")
+        $this->preset->createWidget("Arche::ImageListWidget")
                      ->withSetting("entries", []);
 
 

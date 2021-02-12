@@ -69741,7 +69741,7 @@ $(window).on("load", function () {
   $window.trigger('scroll'); /// is in Viewport ende
   //Über Uns Sub-Navigation
 
-  $('.ueber-uns-nav').wrapInner('<div class="category-title"><a href="/ueber-uns/">Über Uns</a></div><ul><li class="nav-item"><a href="/ueber-uns/philosophie/" class="nav-link">Philosophie</a></li><li class="nav-item"><a href="/ueber-uns/unsere-durchdachte-produktauswahl/" class="nav-link">Unsere durchdachte Produktauswahl</a></li><li class="nav-item"><a href="/ueber-uns/waldorfshop-sinnorientiert-in-die-zukunft/" class="nav-link">Genussrechte - Sinnorientiert in die Zukunft</a></li><li class="nav-item active"><a href="/ueber-uns/waldorfshop-gehoert-sich-selbst/" class="nav-link">ArcheNS gehört sich selbst!</a></li><li class="nav-item"><a href="/ueber-uns/ehrliche-preise/" class="nav-link">Ehrliche Preise</a></li><li class="nav-item"><a href="/ueber-uns/mitarbeiten" class="nav-link">Mitarbeiten</a></li></ul>');
+  $('.ueber-uns-nav').wrapInner('<div class="category-title"><a href="/ueber-uns/">Über Uns</a></div><ul><li class="nav-item"><a href="/ueber-uns/philosophie/" class="nav-link">Philosophie</a></li><li class="nav-item"><a href="/ueber-uns/unsere-durchdachte-produktauswahl/" class="nav-link">Unsere durchdachte Produktauswahl</a></li><li class="nav-item"><a href="/ueber-uns/waldorfshop-sinnorientiert-in-die-zukunft/" class="nav-link">Genussrechte - Sinnorientiert in die Zukunft</a></li><li class="nav-item active"><a href="/ueber-uns/waldorfshop-gehoert-sich-selbst/" class="nav-link">Arche gehört sich selbst!</a></li><li class="nav-item"><a href="/ueber-uns/ehrliche-preise/" class="nav-link">Ehrliche Preise</a></li><li class="nav-item"><a href="/ueber-uns/mitarbeiten" class="nav-link">Mitarbeiten</a></li></ul>');
   $('.ueber-uns-nav').parent().parent().parent().parent().addClass('sticky_uu_navigation');
 
   if (window.location.href.indexOf("waldorfshop-gehoert-sich-selbst") > -1) {
@@ -69775,7 +69775,7 @@ $(window).on("load", function () {
   }
 
   $('.category-3236 .ueber-uns-nav .nav-item').removeClass('active'); // Search
-  //$(".wd_search .search-shown").prepend('<div class="wd_logo"><a href="/" title="ArcheNS.eu" alt="waldorfshop.eu"><img alt="ArcheNS" src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/logo.svg"></a></div>');
+  //$(".wd_search .search-shown").prepend('<div class="wd_logo"><a href="/" title="Arche.eu" alt="waldorfshop.eu"><img alt="Arche" src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/logo.svg"></a></div>');
   //$('#page-header-parent .page-header').wrapInner('<div class="wd_searchbar"></div>');
 
   $(".upperpaginationinner").last().css("margin-bottom", "40px");

@@ -1,11 +1,11 @@
 {
-    "identifier": "ArcheNS::CheckoutHeaderWidget",
+    "identifier": "Arche::CheckoutHeaderWidget",
     "label": "Widget.checkoutHeader",
     "previewImageURL": "/images/dia-widgets/header-checkout-navbar.png",
     "type": "header",
     "categories": ["dia"],
     "position": 0,
-    "widgetClass": "ArcheNS\\Widgets\\Header\\CheckoutHeaderWidget",
+    "widgetClass": "Arche\\Widgets\\Header\\CheckoutHeaderWidget",
     "settings": {
         "companyLogoUrl": {
             "type": "file",

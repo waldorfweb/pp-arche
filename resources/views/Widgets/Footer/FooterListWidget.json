@@ -1,11 +1,11 @@
 {
-    "identifier": "ArcheNS::FooterListWidget",
+    "identifier": "Arche::FooterListWidget",
     "label": "Widget.listLabel",
     "previewImageURL": "/images/dia-widgets/footer-linklist.png",
     "type": "static",
     "categories": ["dia"],
     "position": 900,
-    "widgetClass": "ArcheNS\\Widgets\\Footer\\FooterListWidget",
+    "widgetClass": "Arche\\Widgets\\Footer\\FooterListWidget",
     "settings": {
         "displayInline": {
             "type": "checkbox",

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArcheNS\Widgets\Presets;
+namespace Arche\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\PresetHelper;
@@ -20,7 +20,7 @@ class CheckoutFooterPreset implements ContentPreset
         $preset = pluginApp(PresetHelper::class);
 
 
-        $preset->createWidget("ArcheNS::FooterListWidget")
+        $preset->createWidget("Arche::FooterListWidget")
                ->withSetting("displayInline", true)
                ->withSetting("entries", [
                    [
@@ -47,7 +47,7 @@ class CheckoutFooterPreset implements ContentPreset
                ]);
 
 
-        $preset->createWidget("ArcheNS::ImageListWidget")
+        $preset->createWidget("Arche::ImageListWidget")
                ->withSetting("entries", []);
 
         return $preset->toArray();

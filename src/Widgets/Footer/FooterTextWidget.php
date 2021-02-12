@@ -1,10 +1,10 @@
 <?php
 
-namespace ArcheNS\Widgets\Footer;
+namespace Arche\Widgets\Footer;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class FooterTextWidget extends BaseWidget
 {
-    protected $template = "ArcheNS::Widgets.Footer.FooterTextWidget";
+    protected $template = "Arche::Widgets.Footer.FooterTextWidget";
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArcheNS\Widgets\Presets;
+namespace Arche\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\PresetHelper;
@@ -58,19 +58,19 @@ class DefaultFooterPreset implements ContentPreset
         $listGridPreset = $this->preset->createWidget("Ceres::FourColumnWidget");
 
         $listGridPreset
-            ->createChild("first", "ArcheNS::FooterTitleWidget")
+            ->createChild("first", "Arche::FooterTitleWidget")
             ->withSetting("text", 'Service Hotline');
 
         $listGridPreset
-            ->createChild("first", "ArcheNS::FooterTextWidget")
+            ->createChild("first", "Arche::FooterTextWidget")
             ->withSetting("text", $this->getServiceText());
 
 
         $listGridPreset
-            ->createChild("second", "ArcheNS::FooterTitleWidget")
+            ->createChild("second", "Arche::FooterTitleWidget")
             ->withSetting("text", 'Shop Service');
         $listGridPreset
-            ->createChild("second", "ArcheNS::FooterListWidget")
+            ->createChild("second", "Arche::FooterListWidget")
             ->withSetting("entries", [
                 [
                     "text" => "Item 1",
@@ -97,10 +97,10 @@ class DefaultFooterPreset implements ContentPreset
 
 
         $listGridPreset
-            ->createChild("third", "ArcheNS::FooterTitleWidget")
+            ->createChild("third", "Arche::FooterTitleWidget")
             ->withSetting("text", 'Information');
         $listGridPreset
-            ->createChild("third", "ArcheNS::FooterLegalInformationWidget")
+            ->createChild("third", "Arche::FooterLegalInformationWidget")
             ->withSetting("showCancellationRights", true)
             ->withSetting("showLegalDisclosure", true)
             ->withSetting("showPrivacyPolicy", true)
@@ -110,14 +110,14 @@ class DefaultFooterPreset implements ContentPreset
             ->withSetting("cancellationFormContainer.cancellationPdfPath", "");
 
         $listGridPreset
-            ->createChild("fourth", "ArcheNS::FooterTitleWidget")
+            ->createChild("fourth", "Arche::FooterTitleWidget")
             ->withSetting("text", 'Newsletter');
 
         $listGridPreset
             ->createChild("fourth", "Ceres::NewsletterWidget")
             ->withSetting("customClass", 'dia-footer-newsletter');
 
-        $this->preset->createWidget("ArcheNS::ImageListWidget")
+        $this->preset->createWidget("Arche::ImageListWidget")
         ->withSetting("entries", []);
     }
 

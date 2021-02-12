@@ -1,11 +1,11 @@
 {
-    "identifier": "ArcheNS::FooterTitleWidget",
+    "identifier": "Arche::FooterTitleWidget",
     "label": "Widget.footerHeadline",
     "previewImageURL": "/images/dia-widgets/footer-headline.png",
     "type": "static",
     "categories": ["dia"],
     "position": 400,
-    "widgetClass": "ArcheNS\\Widgets\\Footer\\FooterTitleWidget",
+    "widgetClass": "Arche\\Widgets\\Footer\\FooterTitleWidget",
     "settings": {
         "text": {
             "type": "text",

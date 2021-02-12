@@ -1,11 +1,11 @@
 {
-    "identifier": "ArcheNS::HeaderWidget",
+    "identifier": "Arche::HeaderWidget",
     "label": "Widget.Header",
     "previewImageURL": "/images/dia-widgets/header-navbar.png",
     "type": "header",
     "categories": ["dia"],
     "position": 0,
-    "widgetClass": "ArcheNS\\Widgets\\Header\\HeaderWidget",
+    "widgetClass": "Arche\\Widgets\\Header\\HeaderWidget",
     "settings": {
         "enableLanguageSelect": {
             "type": "checkbox",

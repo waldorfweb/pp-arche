@@ -1,12 +1,12 @@
 <?php
 
-namespace ArcheNS\Widgets\Footer;
+namespace Arche\Widgets\Footer;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class FooterListWidget extends BaseWidget
 {
-    protected $template = "ArcheNS::Widgets.Footer.FooterListWidget";
+    protected $template = "Arche::Widgets.Footer.FooterListWidget";
 
     protected function getTemplateData($widgetSettings, $isPreview)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace ArcheNS\Providers;
+namespace Arche\Providers;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
@@ -12,7 +12,7 @@ use IO\Helper\ComponentContainer;
 
 /**
  * Class ThemeServiceProvider
- * @package ArcheNS\Providers
+ * @package Arche\Providers
  */
 class ThemeServiceProvider extends ServiceProvider
 {
@@ -22,13 +22,13 @@ class ThemeServiceProvider extends ServiceProvider
     }
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-        $enabledOverrides = explode(", ", $config->get("ArcheNS.templates.override"));
+        $enabledOverrides = explode(", ", $config->get("Arche.templates.override"));
 
         if (in_array("add_style", $enabledOverrides) || in_array("all", $enabledOverrides)) {
 
             $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container) {
                 // The style is imported in the <head> on the PageDesign.twig of Ceres
-                $container->addStyleTemplate('ArcheNS::AddStyle');
+                $container->addStyleTemplate('Arche::AddStyle');
             }, self::PRIORITY);
 
         }
@@ -39,7 +39,7 @@ class ThemeServiceProvider extends ServiceProvider
             $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
             {
                 // The script is imported in the Footer.twig of Ceres
-                $container->addScriptTemplate('ArcheNS::AddScript');
+                $container->addScriptTemplate('Arche::AddScript');
             }, self::PRIORITY);
 
         }
@@ -53,19 +53,19 @@ class ThemeServiceProvider extends ServiceProvider
             $partial->set('footer', 'Ceres::PageDesign.Partials.Footer');
             if (in_array("head", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('head', 'ArcheNS::PageDesign.Partials.Head');
+                $partial->set('head', 'Arche::PageDesign.Partials.Head');
             }
             if (in_array("header", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('header', 'ArcheNS::PageDesign.Partials.Header.Header');
+                $partial->set('header', 'Arche::PageDesign.Partials.Header.Header');
             }
             if (in_array("page_design", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('page-design', 'ArcheNS::PageDesign.PageDesign');
+                $partial->set('page-design', 'Arche::PageDesign.PageDesign');
             }
             if (in_array("footer", $enabledOverrides) || in_array("all", $enabledOverrides))
             {
-                $partial->set('footer', 'ArcheNS::PageDesign.Partials.Footer');
+                $partial->set('footer', 'Arche::PageDesign.Partials.Footer');
             }
             return false;
         }, self::PRIORITY);
@@ -74,7 +74,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.home', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Homepage.Homepage');
+                $container->setTemplate('Arche::Homepage.Homepage');
                 return false;
             }, self::PRIORITY);
         }
@@ -83,7 +83,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.category.content', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Category.Content.CategoryContent');
+                $container->setTemplate('Arche::Category.Content.CategoryContent');
                 return false;
             }, self::PRIORITY);
         }
@@ -92,7 +92,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.category.item', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Category.Item.CategoryItem');
+                $container->setTemplate('Arche::Category.Item.CategoryItem');
                 return false;
             }, self::PRIORITY);
         }
@@ -101,7 +101,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.basket', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Basket.Basket');
+                $container->setTemplate('Arche::Basket.Basket');
                 return false;
             }, self::PRIORITY);
         }
@@ -110,7 +110,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.checkout', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Checkout.Checkout');
+                $container->setTemplate('Arche::Checkout.Checkout');
                 return false;
             }, self::PRIORITY);
         }
@@ -119,7 +119,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.confirmation', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Checkout.OrderConfirmation');
+                $container->setTemplate('Arche::Checkout.OrderConfirmation');
                 return false;
             }, self::PRIORITY);
         }
@@ -128,7 +128,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.login', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Customer.Login');
+                $container->setTemplate('Arche::Customer.Login');
                 return false;
             }, self::PRIORITY);
         }
@@ -137,7 +137,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.register', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Customer.Register');
+                $container->setTemplate('Arche::Customer.Register');
                 return false;
             }, self::PRIORITY);
         }
@@ -146,7 +146,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.item', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Item.SingleItemWrapper');
+                $container->setTemplate('Arche::Item.SingleItemWrapper');
                 return false;
             }, self::PRIORITY);
         }
@@ -155,7 +155,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.search', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::ItemList.ItemListView');
+                $container->setTemplate('Arche::ItemList.ItemListView');
                 return false;
             }, self::PRIORITY);
         }
@@ -164,7 +164,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.my-account', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::MyAccount.MyAccount');
+                $container->setTemplate('Arche::MyAccount.MyAccount');
                 return false;
             }, self::PRIORITY);
         }
@@ -173,7 +173,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.wish-list', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::WishList.WishListView');
+                $container->setTemplate('Arche::WishList.WishListView');
                 return false;
             }, self::PRIORITY);
         }
@@ -182,7 +182,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.contact', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Customer.Contact');
+                $container->setTemplate('Arche::Customer.Contact');
                 return false;
             }, self::PRIORITY);
         }
@@ -191,7 +191,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.order.return', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::OrderReturn.OrderReturnView');
+                $container->setTemplate('Arche::OrderReturn.OrderReturnView');
                 return false;
             }, self::PRIORITY);
         }
@@ -200,7 +200,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.order.return.confirmation', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::OrderReturn.OrderReturnConfirmation');
+                $container->setTemplate('Arche::OrderReturn.OrderReturnConfirmation');
                 return false;
             }, self::PRIORITY);
         }
@@ -209,7 +209,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.cancellation-rights', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.CancellationRights');
+                $container->setTemplate('Arche::StaticPages.CancellationRights');
                 return false;
             }, self::PRIORITY);
         }
@@ -218,7 +218,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.cancellation-form', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.CancellationForm');
+                $container->setTemplate('Arche::StaticPages.CancellationForm');
                 return false;
             }, self::PRIORITY);
         }
@@ -227,7 +227,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.legal-disclosure', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.LegalDisclosure');
+                $container->setTemplate('Arche::StaticPages.LegalDisclosure');
                 return false;
             }, self::PRIORITY);
         }
@@ -236,7 +236,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.privacy-policy', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.PrivacyPolicy');
+                $container->setTemplate('Arche::StaticPages.PrivacyPolicy');
                 return false;
             }, self::PRIORITY);
         }
@@ -245,7 +245,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.terms-conditions', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.TermsAndConditions');
+                $container->setTemplate('Arche::StaticPages.TermsAndConditions');
                 return false;
             }, self::PRIORITY);
         }
@@ -254,7 +254,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.item-not-found', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.ItemNotFound');
+                $container->setTemplate('Arche::StaticPages.ItemNotFound');
                 return false;
             }, self::PRIORITY);
         }
@@ -263,7 +263,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.page-not-found', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::StaticPages.PageNotFound');
+                $container->setTemplate('Arche::StaticPages.PageNotFound');
                 return false;
             }, self::PRIORITY);
         }
@@ -272,18 +272,18 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen('IO.tpl.newsletter.opt-out', function (TemplateContainer $container)
             {
-                $container->setTemplate('ArcheNS::Newsletter.NewsletterOptOut');
+                $container->setTemplate('Arche::Newsletter.NewsletterOptOut');
                 return false;
             }, self::PRIORITY);
         }
 
-        $enabledResultFields = explode(", ", $config->get("ArcheNS.result_fields.override"));
+        $enabledResultFields = explode(", ", $config->get("Arche.result_fields.override"));
         // Override auto complete list item result fields
         if (in_array("auto_complete_list_item", $enabledResultFields) || in_array("all", $enabledResultFields))
         {
             $dispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
             {
-                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'ArcheNS::ResultFields.AutoCompleteListItem');
+                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'Arche::ResultFields.AutoCompleteListItem');
                 return false;
             }, self::PRIORITY);
         }
@@ -292,7 +292,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
             {
-                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_ITEM, 'ArcheNS::ResultFields.BasketItem');
+                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_ITEM, 'Arche::ResultFields.BasketItem');
                 return false;
             }, self::PRIORITY);
         }
@@ -301,7 +301,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
             {
-                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'ArcheNS::ResultFields.CategoryTree');
+                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'Arche::ResultFields.CategoryTree');
                 return false;
             }, self::PRIORITY);
         }
@@ -311,7 +311,7 @@ class ThemeServiceProvider extends ServiceProvider
 
         if (in_array('list_item', $enabledResultFields) || in_array('all', $enabledResultFields))
         {
-            $resultFieldTemplate->setTemplate(ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'ArcheNS::ResultFields.ListItem');
+            $resultFieldTemplate->setTemplate(ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'Arche::ResultFields.ListItem');
         }
 
         // Override single item view result fields
@@ -319,7 +319,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $dispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
             {
-                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'ArcheNS::ResultFields.SingleItem');
+                $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Arche::ResultFields.SingleItem');
                 return false;
             }, self::PRIORITY);
         }
@@ -328,7 +328,7 @@ class ThemeServiceProvider extends ServiceProvider
         {
             if ($container->getOriginComponentTemplate()=='Ceres::Customer.Components.UserLoginHandler')
             {
-                $container->setNewComponentTemplate('ArcheNS::Customer.Components.UserLoginHandler');
+                $container->setNewComponentTemplate('Arche::Customer.Components.UserLoginHandler');
             }
         }, self::PRIORITY);
     }

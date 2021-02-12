@@ -1,12 +1,12 @@
 <?php
 
-namespace ArcheNS\Widgets\Common;
+namespace Arche\Widgets\Common;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class ImageListWidget extends BaseWidget
 {
-    protected $template = "ArcheNS::Widgets.Common.ImageListWidget";
+    protected $template = "Arche::Widgets.Common.ImageListWidget";
 
     protected function getTemplateData($widgetSettings, $isPreview)
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ArcheNS\Widgets\Common;
+namespace Arche\Widgets\Common;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class SpacerWidget extends BaseWidget
 {
-    protected $template = "ArcheNS::Widgets.Common.SpacerWidget";
+    protected $template = "Arche::Widgets.Common.SpacerWidget";
 }
