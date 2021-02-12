@@ -1,10 +1,10 @@
 <?php
 
-namespace Waldorfshop2\Widgets\Footer;
+namespace ArcheNS\Widgets\Footer;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class FooterLegalInformationWidget extends BaseWidget
 {
-    protected $template = "Waldorfshop2::Widgets.Footer.FooterLegalInformationWidget";
+    protected $template = "ArcheNS::Widgets.Footer.FooterLegalInformationWidget";
 }

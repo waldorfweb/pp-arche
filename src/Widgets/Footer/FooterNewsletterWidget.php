@@ -1,10 +1,10 @@
 <?php
 
-namespace Waldorfshop2\Widgets\Footer;
+namespace ArcheNS\Widgets\Footer;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class FooterNewsletterWidget extends BaseWidget
 {
-    protected $template = "Waldorfshop2::Widgets.Footer.FooterNewsletterWidget";
+    protected $template = "ArcheNS::Widgets.Footer.FooterNewsletterWidget";
 }

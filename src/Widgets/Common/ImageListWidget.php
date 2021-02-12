@@ -1,12 +1,12 @@
 <?php
 
-namespace Waldorfshop2\Widgets\Common;
+namespace ArcheNS\Widgets\Common;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class ImageListWidget extends BaseWidget
 {
-    protected $template = "Waldorfshop2::Widgets.Common.ImageListWidget";
+    protected $template = "ArcheNS::Widgets.Common.ImageListWidget";
 
     protected function getTemplateData($widgetSettings, $isPreview)
     {
