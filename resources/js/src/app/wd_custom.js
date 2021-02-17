@@ -45,7 +45,7 @@ $(function() {
             $(window).on("scroll touchmove", function()
             {
     
-                    if ($(document).scrollTop() <= $("body").position().top + 0 )
+                    if ($(document).scrollTop() <= $("body").position().top - 140 )
                     {
                         //$(".et_toggle_fullscreen_menu").addClass("showplus");
                         $("body").removeClass("fixed");
