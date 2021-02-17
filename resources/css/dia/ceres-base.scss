@@ -15051,6 +15051,18 @@ body {
     color: #94C11F;
     font-size: 18px !important;
 }
+@media only screen and (min-width: 992px) {
+.mainmenu li a{
+	margin-top:39%;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.fixed .mainmenu li a{
+	margin-top:0%;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+}
 
 
 /* CSS after update ceres 5
