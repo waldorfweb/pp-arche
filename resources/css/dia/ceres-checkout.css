@@ -14018,8 +14018,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 
 html, body {
   width: 100%;
-  height: 100%;
-  border: 10px solid red !important; }
+  height: 100%; }
 
 body {
   background-color: #fff !important;
@@ -14030,7 +14029,7 @@ body {
   font-family: 'Signika',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 0px solid red !important; }
+  border: 10px solid red !important; }
 
 /* Google Form iframe */
 /* CSS after update ceres 5

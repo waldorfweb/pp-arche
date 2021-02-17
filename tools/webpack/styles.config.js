@@ -2,8 +2,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const path = require("path");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-const pluginSetUrl = "https://www.waldorfshop.eu";
-const pluginPath = "waldorfshop";
+const pluginSetUrl = "https://www.arche-naturkueche-shop.de";
+const pluginPath = "arche";
 
 module.exports = env =>
 {
