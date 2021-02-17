@@ -42,6 +42,20 @@ $(function() {
         //$().ready(function(){
 
 
+            $(window).on("scroll touchmove", function()
+            {
+    
+                    if ($(document).scrollTop() <= $("body").position().top + 0 )
+                    {
+                        //$(".et_toggle_fullscreen_menu").addClass("showplus");
+                        $("body").removeClass("fixed");
+                    } else {
+                        //$(".et_toggle_fullscreen_menu").removeClass("showplus");
+                        $("body").addClass("fixed");
+                    }
+    
+            });
+
         //remove canonical tag
         //$(".cano").removeClass("cano");
     $(".search-input ").attr("placeholder", "Suche");
