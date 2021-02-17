@@ -14029,7 +14029,8 @@ body {
   font-family: 'Signika',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 0px solid red !important; }
+  border: 0px solid red !important;
+  margin: 0; }
 
 /* Google Form iframe */
 /* CSS after update ceres 5
