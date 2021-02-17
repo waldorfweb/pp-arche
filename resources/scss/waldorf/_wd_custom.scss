@@ -45,10 +45,13 @@ body {
 	font-family:'Signika',sans-serif;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
-	border:0px solid red !important;
-	margin:0;
 }
 
+/* widget full width */
+.widget-full-width {
+	margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
 
 /* Google Form iframe */
 
