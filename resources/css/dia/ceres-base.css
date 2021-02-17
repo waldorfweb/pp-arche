@@ -13376,6 +13376,14 @@ body {
   color: #94C11F;
   font-size: 18px !important; }
 
+.mainmenu li a {
+  margin-top: 39%;
+  transition: all .2s; }
+
+.fixed .mainmenu li a {
+  margin-top: 0%;
+  transition: all .2s; }
+
 /* CSS after update ceres 5
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
