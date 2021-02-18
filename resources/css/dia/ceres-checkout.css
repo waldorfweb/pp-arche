@@ -14138,6 +14138,12 @@ h4 {
   background: var(--bg-color);
   color: white; }
 
+.dia-footer__copyright--price {
+  text-align: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none; }
+
 .copyright {
   font-size: 12px; }
 

@@ -15278,6 +15278,14 @@ h4 { font-size:16px !important;}
 	background:var(--bg-color);
 	color:white;
 }
+.dia-footer__copyright--price{
+	text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+	-webkit-box-flex:0;
+	    -ms-flex:none;
+	        flex:none;
+}
 .copyright{
 	font-size:12px;
 }
