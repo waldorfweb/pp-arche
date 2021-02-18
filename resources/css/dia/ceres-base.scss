@@ -14923,187 +14923,76 @@ body.lb-disable-scrolling {
 /*
  green #94C11F
 
+
 */
-
-@font-face {
-	font-family:'Signika';
-	font-style:normal;
-	font-weight:300;
-	src:url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.eot);
-	src:local('Signika Light'),local(Signika-Light),url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.eot?#iefix) format("embedded-opentype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.woff2") format("woff2)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.woff") format("woff)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.ttf") format("truetype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-300.svg#Signika") format("svg");
+:root {
+    --main-color:#94C11F;
 }
 
+/* lato-100 - latin */
 @font-face {
-	font-family:'Signika';
-	font-style:normal;
-	font-weight:400;
-	src:url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.eot);
-	src:local('Signika Regular'),local(Signika-Regular),url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.eot?#iefix) format("embedded-opentype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.woff2") format("woff2)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.woff") format("woff)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.ttf") format("truetype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-regular.svg#Signika") format("svg");
-}
-
-@font-face {
-	font-family:'Signika';
-	font-style:normal;
-	font-weight:600;
-	src:url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.eot);
-	src:local('Signika SemiBold'),local(Signika-SemiBold),url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.eot?#iefix) format("embedded-opentype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.woff2") format("woff2)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.woff") format("woff)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.ttf") format("truetype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-600.svg#Signika") format("svg");
-}
-
-@font-face {
-	font-family:'Signika';
-	font-style:normal;
-	font-weight:700;
-	src:url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.eot);
-	src:local('Signika Bold'),local(Signika-Bold),url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.eot?#iefix) format("embedded-opentype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.woff2") format("woff2)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.woff") format("woff)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.ttf") format("truetype)","url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Signika/signika-v10-latin-700.svg#Signika") format("svg");
-}
-
-/* Arche Fonts */
-/* source-sans-pro-200 - latin */
-@font-face {
-	font-family: 'Source Sans Pro';
+	font-family: 'Lato';
 	font-style: normal;
-	font-weight: 200;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.eot'); /* IE9 Compat Modes */
+	font-weight: 100;
+	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-200.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.woff') format('woff'), /* Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-100.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  /* source-sans-pro-300 - latin */
+  /* lato-300 - latin */
   @font-face {
-	font-family: 'Source Sans Pro';
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.eot'); /* IE9 Compat Modes */
+	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.woff') format('woff'), /* Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  /* source-sans-pro-regular - latin */
+  /* lato-regular - latin */
   @font-face {
-	font-family: 'Source Sans Pro';
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  /* source-sans-pro-italic - latin */
+  /* lato-italic - latin */
   @font-face {
-	font-family: 'Source Sans Pro';
+	font-family: 'Lato';
 	font-style: italic;
 	font-weight: 400;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.eot'); /* IE9 Compat Modes */
+	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-italic.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.woff') format('woff'), /* Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  /* source-sans-pro-600 - latin */
+  /* lato-700 - latin */
   @font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 600;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
-  }
-  /* source-sans-pro-700 - latin */
-  @font-face {
-	font-family: 'Source Sans Pro';
+	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 700;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.eot'); /* IE9 Compat Modes */
+	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
-  }
-  /* source-sans-pro-900 - latin */
-  @font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 900;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/source-sans-pro-v14-latin-900.svg#SourceSansPro') format('svg'); /* Legacy iOS */
-  }
-
-/* quattrocento-sans-regular - latin */
-@font-face {
-	font-family: 'Quattrocento Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-regular.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
-  }
-
-  /* Quattrocento Sans */
-
-  /* quattrocento-sans-italic - latin */
-  @font-face {
-	font-family: 'Quattrocento Sans';
-	font-style: italic;
-	font-weight: 400;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-italic.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
-  }
-  /* quattrocento-sans-700 - latin */
-  @font-face {
-	font-family: 'Quattrocento Sans';
-	font-style: normal;
-	font-weight: 700;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
-  }
-  /* quattrocento-sans-700italic - latin */
-  @font-face {
-	font-family: 'Quattrocento Sans';
-	font-style: italic;
-	font-weight: 700;
-	src: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.woff') format('woff'), /* Modern Browsers */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/quattrocento-sans-v13-latin-700italic.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Fonts/Lato/lato-v17-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
   }
 
 
@@ -15116,13 +15005,29 @@ html,body {
 body {
 	background-color:#fff!important;
 	line-height:1.5em;
-	color:#616161;
-	font-size:16px;
-	font-weight:300;
-	font-family:'Quattrocento Sans',sans-serif !important;
+	color:#8c8c8c !important;
+	font-size:18px !important;
+	font-weight:100 !important;
+	font-family:'Lato',sans-serif !important;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
+
+h1, h2, h3, h4, h5, h6{
+	color: var(--main-color);
+	font-weight: 100;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.35em;
+    margin-bottom: 0.3em;
+	letter-spacing: 0;
+}
+
+h1 { font-size:48px !important;}
+h2 { font-size:32px !important;}
+h3 { font-size:24px !important;}
+h4 { font-size:18px !important;}
 
 #page-body > .container-max > .row > .col {
     padding-top: 0px !important;
@@ -15148,6 +15053,14 @@ body {
 	-webkit-transition: all .2s;
 	transition: all .2s;
 }
+
+/* Instagram */
+.instagram{
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	padding-bottom:5px;
+}
+
 
 /* Search */
 .top-bar .search-shown .always-visible-search .search-input {
@@ -15212,8 +15125,17 @@ body {
 .main-navbar-collapsable .mainmenu > li > a {
     padding: 1rem 0.5rem;
     color: #94C11F;
-    font-size: 20px !important;
+    font-size: 18px !important;
+	text-transform: uppercase;
+	letter-spacing: 0.051em;
+	font-weight: 300;
 }
+
+.fixed .normalmenu{
+	-webkit-box-shadow: 0px -16px 65px 19px rgba(0,0,0,0.29);
+	box-shadow: 0px -16px 65px 19px rgba(0,0,0,0.29);
+}
+
 @media only screen and (min-width: 992px) {
 .mainmenu li a{
 	margin-top:39%;
@@ -15227,17 +15149,41 @@ body {
 }
 }
 
+/* Homepage */
+
+.primar_h1 h1{
+	color:white !important;
+}
+.logo-grey{
+	float: right;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-top: -60px;
+}
 
 /* footer  */
 
 .dia-footer {
     border-top: 14px solid #94C11F !important;
-    background-color: #777777 !important;
+    background-color: #777 !important;
     color: #fff;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
+}
+
+/* .footerlogo{
+	margin-left: calc(100% - 30vw);
+    max-width: 300px;
+	margin-top:-40px;
+} */
+
+.widget-legal-information a, .dia-footer a {
+    margin-right: 10px;
+    color: #fff;
 }
 
 /* .footer .widget_hinweis_klein .fa, .footer .widget_hinweis_klein .far, .footer .widget_hinweis_klein .fas {

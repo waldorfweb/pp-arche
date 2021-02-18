@@ -81030,6 +81030,7 @@ $(function () {}); //require(['jQuery'], function ($) {
 
 $(window).on("load", function () {
   //$().ready(function(){
+  $('.brand-wrapper').append('<a href="https://www.instagram.com/arche_naturkueche/" target="_blank" class="instagram"><img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/Instagram_font_awesome.png" alt="Instagram" width="23" height="23"></a>');
   $(window).on("scroll touchmove", function () {
     if ($(document).scrollTop() <= $("body").position().top - 140) {
       //$(".et_toggle_fullscreen_menu").addClass("showplus");
