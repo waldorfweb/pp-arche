@@ -15030,6 +15030,13 @@ h2 { font-size:32px !important;}
 h3 { font-size:24px !important;}
 h4 { font-size:18px !important;}
 
+@media only screen and (max-width: 567px) {
+h1 { font-size:38px !important;}
+h2 { font-size:24px !important;}
+h3 { font-size:18px !important;}
+h4 { font-size:16px !important;}
+}
+
 #page-body > .container-max > .row > .col {
     padding-top: 0px !important;
 }
@@ -15055,6 +15062,14 @@ h4 { font-size:18px !important;}
 	transition: all .2s;
 }
 
+@media only screen and (max-width: 992px) {
+	.brand-wrapper{
+		padding:0 20px;
+	}
+	.navbar-toggler{
+		right:0px !important;
+	}
+}
 /* Instagram */
 .instagram{
 	-ms-flex-item-align: end;
@@ -15105,6 +15120,15 @@ h4 { font-size:18px !important;}
 	font-family:Custom-Font,Helvetica,Arial,sans-serif;
 }
 
+@media only screen and (max-width: 992px) {
+	.always-visible-search {
+		padding-left: 0px !important;
+	}
+	#page-header-parent .search-input {
+		max-width: 100% !important;
+	}
+}
+
 /* Topbar */
 
 .control-basket .toggle-basket-preview .badge {
@@ -15152,17 +15176,35 @@ h4 { font-size:18px !important;}
 
 /* Homepage */
 
+/* home h1 transparent über den Slider ziehen */
+
+/* .homeh1 {
+	margin-top:-109px !important;
+}
+.homeh1 .widget-primary .bg-appearance {
+    background-color: #93c11f52 !important;
+} */
 .primar_h1 h1{
 	color:white !important;
 }
-.logo-grey{
-	float: right;
-    position: relative;
-    display: block;
-    width: 200px;
-    height: auto;
-    margin-top: -60px;
+.homeh1 {
+	margin-top:-14px !important;
 }
+
+@media only screen and (max-width: 567px) {
+	/* .homeh1 {
+		margin-top:-14px !important;
+	} */
+	.homeh1 .widget-primary .bg-appearance {
+		background-color: var(--main-color) !important;
+	}
+	/* .primar_h1 h1{
+		color:white !important;
+		font-size:24px !important;
+	} */
+}
+
+/* ende home h1 transparent über den Slider ziehen */
 
 .textrow_color01_wrapper{
 	width: 100vw;
@@ -15176,8 +15218,8 @@ h4 { font-size:18px !important;}
 }
 @media only screen and (max-width: 676px) {
 .textrow_color01_wrapper{
-	padding-left:24px;
-	padding-right:24px;
+	padding-left:20px;
+	padding-right:20px;
 }
 }
 
@@ -15247,27 +15289,35 @@ h4 { font-size:18px !important;}
 	padding:10px 0;
 }
 .widget-legal-information a{
-    margin-right: 10px;
     color: white;
 	opacity: 1;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	background:var(--main-color);
 	margin: 10px 0px;
-    padding: 13px 10px !important;
+    padding: 13px 15px 13px 10px !important;
+	margin-left:-10px;
 }
 .widget-legal-information a:hover{
-    color: var(--main-color);
+    color: white;
 	opacity: 1;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	background:white;
+	background:var(--bg-color);
 }
 @media only screen and (max-width: 992px) {
 .widget-legal-information {
     margin-top:40px !important;
 }
 }
+
+@media only screen and (max-width: 676px) {
+	.widget-legal-information a{
+		width:100%;
+		float:left;
+		margin:0 auto;
+	}
+	}
 
 .icons_nachhaltigkeite{
 	margin: 0 auto;;
