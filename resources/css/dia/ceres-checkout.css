@@ -14131,7 +14131,8 @@ h4 {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  opacity: 0.5; }
+  opacity: 0.5;
+  margin-bottom: 20px !important; }
 
 .dia-footer__copyright {
   font-size: 12px;
