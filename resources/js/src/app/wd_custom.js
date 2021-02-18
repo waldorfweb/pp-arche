@@ -44,7 +44,7 @@ $(function() {
         $('.brand-wrapper').append('<a href="https://www.instagram.com/arche_naturkueche/" target="_blank" class="instagram"><img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/Instagram_font_awesome.png" alt="Instagram" width="23" height="23"></a>');
         
         $('.footerpayment').prepend('<hr>');
-        $('.footerpayment').append('<hr>');
+        //$('.footerpayment').append('<hr class="lasthr">');
 
         $('.textrow_color01').wrap('<div class="widget-full-width textrow_color01_wrapper"></div>');
 
