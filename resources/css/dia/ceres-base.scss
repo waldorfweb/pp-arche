@@ -15150,7 +15150,7 @@ h4 { font-size:16px !important;}
 .main-navbar-collapsable .mainmenu > li > a {
     padding: 1rem 0.5rem;
     color: #94C11F;
-    font-size: 18px !important;
+    font-size: 16px !important;
 	text-transform: uppercase;
 	letter-spacing: 0.051em;
 	font-weight: 300;
@@ -15230,6 +15230,24 @@ h4 { font-size:16px !important;}
 	max-width:1230px;
 	margin: 0 auto;
 }
+
+/* Artikelboxen */
+
+.thumb-content .thumb-title{
+	font-size:18px;
+	font-weight: 700;
+	font-style: italic;
+}
+.item-details__subtitle{
+	float:left;
+	width:100%;
+}
+.item-details__author{
+	font-size:12px;
+	float:left;
+	width:100%;
+}
+
 /* footer  */
 
 .dia-footer {
@@ -15289,6 +15307,10 @@ h4 { font-size:16px !important;}
 }
 .copyright{
 	font-size:12px;
+	z-index: 0;
+    display: block;
+    float: left;
+	width:100%
 }
 
 .widget-legal-information {
