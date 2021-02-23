@@ -13848,7 +13848,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   /* --main-color:#ED1C24;
 	--bg-color:#595f4c; */
   /* --main-color:#ED1C24; */
-  --main-color:#880c10;
+  --main-color:#D31A20;
   --bg-color:#c2c2a8;
   --footer-head-color:var(--main-color);
   --footer-color:#3d3d3d; }
@@ -14062,13 +14062,13 @@ h4 {
   margin-top: -106px !important; }
 
 .homeh1 .widget-primary .bg-appearance {
-  background-color: #ed1c236c !important; }
+  background-color: #c2c2a87e !important; }
 
 @media only screen and (max-width: 567px) {
   .homeh1 {
     margin-top: -14px !important; }
   .homeh1 .widget-primary .bg-appearance {
-    background-color: var(--main-color) !important; }
+    background-color: var(--bg-color) !important; }
   .primar_h1 h1 {
     color: white !important;
     font-size: 24px !important; } }
@@ -14078,8 +14078,8 @@ h4 {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: #f0efef;
-  background: url("https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Layout/bg_ci.jpg");
+  background: #f4f4e8;
+  /* background: url('https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Layout/bg_ci.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 40px; }
@@ -14090,11 +14090,42 @@ h4 {
     padding-right: 20px; } }
 
 .textrow_color01_wrapper p {
-  color: white; }
+  color: inherit; }
 
 .textrow_color01 {
   max-width: 1230px;
   margin: 0 auto; }
+
+/* Neuheiten */
+.neuheiten {
+  background: var(--bg-color);
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.neuheiten .widget-item-list-caption {
+  padding: 10px 0 !important;
+  text-align: left;
+  font-size: 24px;
+  color: white !important;
+  margin-bottom: 0px !important; }
+
+.neuheiten .widget-item-list-caption a {
+  color: white !important;
+  font-size: 18px; }
+
+.neuheiten .row {
+  margin: 0px !important;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.neuheiten .cmp-product-thumb {
+  border-radius: 8px !important; }
+
+.neuheiten .owl-carousel .carousel-control.right .owl-single-item-control {
+  right: 15px; }
+
+.neuheiten .owl-carousel .carousel-control.left .owl-single-item-control {
+  left: 15px; }
 
 /* Artikelboxen */
 .thumb-content .thumb-title {
@@ -14206,7 +14237,7 @@ h4 {
 .icons_nachhaltigkeite {
   margin: 0 auto;
   margin-top: -50px;
-  max-width: 210px; }
+  max-width: 290px; }
 
 /* .footer .widget_hinweis_klein .fa, .footer .widget_hinweis_klein .far, .footer .widget_hinweis_klein .fas {
     font-family: "Font Awesome 5 Free";
