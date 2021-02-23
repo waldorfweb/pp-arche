@@ -13840,12 +13840,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	grün #42974c
 */
 /*
- green #94C11F
+ green #ED1C24
 
 
 */
 :root {
-  --main-color:#94C11F;
+  /* --main-color:#ED1C24;
+	--bg-color:#595f4c; */
+  --main-color:#ED1C24;
   --bg-color:#595f4c; }
 
 /* lato-100 - latin */
@@ -13996,12 +13998,12 @@ h4 {
   transition: all .2s; }
 
 .top-bar .search-shown .always-visible-search .search-box-shadow-frame .search-submit {
-  color: #94C11F;
+  color: #ED1C24;
   background-color: #fff; }
 
 .top-bar .search-shown .always-visible-search .search-box-shadow-frame .search-submit:hover {
   color: #fff;
-  background-color: #94C11F; }
+  background-color: #ED1C24; }
 
 .autocomplete-suggestions {
   font-family: Custom-Font,Helvetica,Arial,sans-serif; }
@@ -14029,7 +14031,7 @@ h4 {
 /* Navigation */
 .main-navbar-collapsable .mainmenu > li > a {
   padding: 1rem 0.5rem;
-  color: #94C11F;
+  color: #ED1C24;
   font-size: 16px !important;
   text-transform: uppercase;
   letter-spacing: 0.051em;
@@ -14109,7 +14111,7 @@ h4 {
 
 /* footer  */
 .dia-footer {
-  border-top: 14px solid #94C11F !important;
+  border-top: 14px solid #ED1C24 !important;
   background-color: var(--bg-color) !important;
   color: #fff;
   margin: 0;
@@ -14311,14 +14313,14 @@ h4 {
     top: -11px;
     right: -6px;
     bottom: 0;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 2.6rem !important; } }
 
 /* iPad in landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .main-navbar-collapsable .mainmenu > li > a {
     padding: 0.1rem 0.5rem !important;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 11.2px !important; }
   .search-permanent .controls .nav-link {
     padding: 1.2rem 0.4rem; } }
@@ -14367,7 +14369,7 @@ h4 {
     top: -11px;
     right: -6px;
     bottom: 0;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 2.6rem !important; }
   .navbar-toggler {
     right: -12px; }

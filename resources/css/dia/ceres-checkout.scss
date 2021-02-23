@@ -15495,12 +15495,14 @@ html.ie .confirmation-order-list .cmp-order-item {
 
 
 /*
- green #94C11F
+ green #ED1C24
 
 
 */
 :root {
-    --main-color:#94C11F;
+    /* --main-color:#ED1C24;
+	--bg-color:#595f4c; */
+	--main-color:#ED1C24;
 	--bg-color:#595f4c;
 }
 
@@ -15681,13 +15683,13 @@ h4 { font-size:16px !important;}
 }
 
 .top-bar .search-shown .always-visible-search .search-box-shadow-frame .search-submit {
-	color:#94C11F;
+	color:#ED1C24;
 	background-color:#fff;
 }
 
 .top-bar .search-shown .always-visible-search .search-box-shadow-frame .search-submit:hover {
 	color:#fff;
-	background-color:#94C11F;
+	background-color:#ED1C24;
 }
 
 .autocomplete-suggestions {
@@ -15723,7 +15725,7 @@ h4 { font-size:16px !important;}
 /* Navigation */
 .main-navbar-collapsable .mainmenu > li > a {
     padding: 1rem 0.5rem;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 16px !important;
 	text-transform: uppercase;
 	letter-spacing: 0.051em;
@@ -15825,7 +15827,7 @@ h4 { font-size:16px !important;}
 /* footer  */
 
 .dia-footer {
-    border-top: 14px solid #94C11F !important;
+    border-top: 14px solid #ED1C24 !important;
     background-color: var(--bg-color) !important;
     color: #fff;
     margin: 0;
@@ -16051,7 +16053,7 @@ h4 { font-size:16px !important;}
     top: -11px;
     right: -6px;
     bottom: 0;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 2.6rem !important;
 }
 
@@ -16064,7 +16066,7 @@ and (max-width : 1024px)
 and (orientation : landscape) {
 	.main-navbar-collapsable .mainmenu>li>a {
     padding: 0.1rem 0.5rem !important;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 11.2px !important;
 }
 .search-permanent .controls .nav-link {
@@ -16135,7 +16137,7 @@ body{
     top: -11px;
     right: -6px;
     bottom: 0;
-    color: #94C11F;
+    color: #ED1C24;
     font-size: 2.6rem !important;
 }
 .navbar-toggler {
