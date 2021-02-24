@@ -238,9 +238,9 @@ a {
 
 .search-submit {
 	color:white;
-	background-color:var(--bg-color);
+	background-color:var(--top-color);
 	border-radius: 0 5px 5px 0;
-	border:1px solid var(--bg-color);
+	border:1px solid var(--top-color);
 	height:50px;
 	border-left:0px;
 }
@@ -544,7 +544,7 @@ background-color: #c2c2a87e !important;
 	transition: all .5s;
 	background:var(--main-color);
 	margin: 10px 0px;
-    padding: 13px 15px 13px 10px !important;
+    padding: 15px 15px 15px 10px !important;
 	margin-left:-10px;
 }
 .widget-legal-information a:hover{
