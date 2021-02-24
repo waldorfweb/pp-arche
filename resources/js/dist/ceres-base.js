@@ -69530,9 +69530,11 @@ $(window).on("load", function () {
   $(window).on("scroll touchmove", function () {
     if ($(document).scrollTop() <= $("body").position().top - 140) {
       //$(".et_toggle_fullscreen_menu").addClass("showplus");
+      //console.log('add');
       $("body").removeClass("fixed");
     } else {
       //$(".et_toggle_fullscreen_menu").removeClass("showplus");
+      //console.log('remove');
       $("body").addClass("fixed");
     }
   }); //remove canonical tag

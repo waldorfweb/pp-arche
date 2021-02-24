@@ -13471,9 +13471,9 @@ a {
 #page-header-parent .search-input {
   padding-top: 0.5rem !important;
   line-height: 22px;
-  border: 1px solid #ececec;
+  border: 1px solid var(--bg-color);
   border-right: 0px solid transparent;
-  border-radius: 5px 0 0 5px; }
+  border-radius: 3px 0 0 3px; }
 
 .search-box-shadow-frame .search-submit {
   border-radius: 0 2px 2px 0;
@@ -13482,7 +13482,7 @@ a {
 .search-submit {
   color: white;
   background-color: var(--top-color);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 3px 3px 0;
   border: 1px solid var(--top-color);
   height: 50px;
   border-left: 0px; }
@@ -13512,9 +13512,9 @@ a {
 /* Topbar */
 @media (min-width: 768px) {
   .search-permanent .controls .nav-link, .search-permanent .controls .nav-link {
-    margin: 0.6rem 0rem 1.2rem .1rem;
+    margin: 0.35rem 0rem 1.2rem .1rem;
     padding: 0.6rem .8rem !important;
-    border-radius: 5px; } }
+    border-radius: 3px; } }
 
 .control-basket .toggle-basket-preview .badge {
   color: white; }
@@ -13551,7 +13551,7 @@ a {
 /* Navigation */
 .main-navbar-collapsable .mainmenu > li > a {
   padding: 1rem 0.5rem;
-  color: #ED1C24;
+  /* color: #ED1C24; */
   font-size: 16px !important;
   text-transform: uppercase;
   letter-spacing: 0.051em;
@@ -13569,7 +13569,8 @@ a {
     transition: all .2s; } }
 
 .main-navbar-collapsable .mainmenu > li:hover, .main-navbar-collapsable .mainmenu > li.hover {
-  background-color: var(--main-color); }
+  background-color: var(--main-color);
+  border-radius: 3px 3px 0 0; }
 
 /* Homepage */
 /* home h1 transparent über den Slider ziehen */
