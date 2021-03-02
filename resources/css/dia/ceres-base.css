@@ -13435,6 +13435,22 @@ a {
 .btn.btn-block:hover > .fa:before {
   color: var(--top-color); }
 
+/* @media(max-width:767px) {
+	.cmp-product-thumb button:hover {
+		color:var(--top-color);
+	}
+
+	.cmp-product-thumb .btn:hover {
+		border:0px solid transparent;
+		border-top:1px solid var(--top-color);
+	}
+	.cmp-product-thumb .fa-shopping-cart:hover :before {
+		color: var(--top-color);
+	}
+} */
+.owl-theme .owl-dots {
+  bottom: -37px; }
+
 /* widget full width */
 .widget-full-width {
   margin-left: calc(50% - 50vw);
@@ -13467,6 +13483,10 @@ a {
 .instagram {
   align-self: flex-end;
   padding-bottom: 15px; }
+
+.fixed .instagram {
+  align-self: flex-end;
+  padding-bottom: 3px; }
 
 /* Search */
 .top-bar .search-shown .always-visible-search .search-input {
@@ -13705,6 +13725,13 @@ a {
   max-width: 1230px;
   margin: 0 auto; }
 
+/* Newsletter */
+.widget_newsletter_headline h2 {
+  padding-left: 20px;
+  color: white;
+  font-size: 24px !important;
+  text-align: center; }
+
 /* Neuheiten */
 .neuheiten {
   background: var(--bg-color);
@@ -13772,6 +13799,36 @@ a {
 .widget-primary .add-to-basket-lg-container:hover {
   border-color: transparent var(--top-color) transparent transparent !important; }
 
+.widget-wish-list:before {
+  content: "Deine Wunschliste";
+  background: var(--top-color);
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0px;
+  float: left;
+  clear: both; }
+
+.widget-wish-list {
+  margin-top: 0px !important;
+  padding-top: 0px !important; }
+
+.widget-wish-list .basket-list-item {
+  float: left;
+  width: 100%; }
+
+.widget-wish-list p.text-muted.my-5 {
+  margin-top: 0px !important;
+  padding-top: 40px !important;
+  float: left;
+  top: 40px;
+  width: 100%;
+  text-align: center; }
+
 /* Kategorieseiten */
 .categoriegrid {
   /* background-color: var(--bg-color3); */
@@ -13783,7 +13840,8 @@ a {
 .widget-item-grid .cmp-product-thumb {
   margin-bottom: 0 !important;
   border-right: 1px solid var(--border-color) !important;
-  border-bottom: 1px solid var(--border-color) !important; }
+  border-bottom: 1px solid var(--border-color) !important;
+  border-radius: 0 0 8px 0; }
 
 .widget-step-by-step-navigation .nav-text {
   flex: auto;
@@ -13802,6 +13860,14 @@ a {
 .widget-navigation-tree .category-title {
   background: var(--main-color);
   color: white; }
+
+.sortierenundfiltern {
+  margin-bottom: 20px !important; }
+
+.sortierenundfiltern p {
+  padding: 0 20px;
+  margin-bottom: 0px;
+  font-size: 18px; }
 
 /* Kategorie Availability */
 .item-details__book-details .availability_1:before {
