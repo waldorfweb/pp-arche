@@ -13598,6 +13598,28 @@ a {
   background-color: var(--main-color);
   border-radius: 3px 3px 0 0; }
 
+/* navigation checkout issue bugfix */
+.normalmenu .collapse {
+  background: var(--main-color); }
+
+.main-navbar-collapsable .mainmenu > li > a {
+  color: var(--main-color); }
+
+.text-primary, .color-primary, .color-primary {
+  color: var(--main-color) !important; }
+
+.page-item.active .page-link {
+  background-color: var(--main-color);
+  border-color: var(--main-color); }
+
+.page-link {
+  color: var(--main-color); }
+
+.page-link:hover {
+  color: var(--main-color);
+  background-color: #e9ecef;
+  border-color: #dee2e6; }
+
 /* Homepage */
 /* home h1 transparent über den Slider ziehen */
 .primar_h1 h1 {
@@ -13894,6 +13916,23 @@ a {
 .basket-item-container-right .btn > .fa {
   padding: 0px;
   font-size: 14px; }
+
+/* Basket */
+.input-group > .form-control,
+.input-group > .form-control-plaintext,
+.input-group > .custom-select,
+.input-group > .custom-file {
+  height: 48px; }
+
+.price-box .text-danger, .price-box .color-danger {
+  font-size: 14px;
+  padding: 4px !important;
+  color: white !important; }
+
+.price-box .text-danger:hover, .price-box .color-danger:hover {
+  font-size: 14px;
+  padding: 4px !important;
+  color: var(--top-color) !important; }
 
 /* CSS after update ceres 5
 
