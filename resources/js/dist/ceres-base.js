@@ -69523,11 +69523,13 @@ $(function () {}); //require(['jQuery'], function ($) {
 
 $(window).on("load", function () {
   //$().ready(function(){
-  $('.brand-wrapper').append('<a href="https://www.instagram.com/arche_naturkueche/" target="_blank" class="instagram"><img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/Instagram_font_awesome.png" alt="Instagram" width="23" height="23"></a>');
+  //$('.brand-wrapper').append('<a href="https://www.instagram.com/arche_naturkueche/" target="_blank" class="instagram"><img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/Instagram_font_awesome.png" alt="Instagram" width="23" height="23"></a>');
   $('.footerpayment').prepend('<hr>'); //$('.footerpayment').append('<hr class="lasthr">');
 
   $('.textrow_color01').wrap('<div class="widget-full-width textrow_color01_wrapper"></div>');
   $(window).on("scroll touchmove", function () {
+    $("body").addClass("touched-fixed");
+
     if ($(document).scrollTop() <= $("body").position().top - 140) {
       //$(".et_toggle_fullscreen_menu").addClass("showplus");
       //console.log('add');
@@ -69536,6 +69538,7 @@ $(window).on("load", function () {
       //$(".et_toggle_fullscreen_menu").removeClass("showplus");
       //console.log('remove');
       $("body").addClass("fixed");
+      $("body").addClass("touched-fixed");
     }
   }); //remove canonical tag
   //$(".cano").removeClass("cano");
