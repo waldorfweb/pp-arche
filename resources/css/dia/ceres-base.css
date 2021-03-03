@@ -13670,6 +13670,9 @@ a {
   background-color: #e9ecef;
   border-color: #dee2e6; }
 
+.mobile-navigation {
+  background: var(--main-color); }
+
 /* Homepage */
 /* home h1 transparent über den Slider ziehen */
 .primar_h1 h1 {
