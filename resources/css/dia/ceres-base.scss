@@ -15161,6 +15161,20 @@ a {
 		transition: all .2s;
 	}
 }
+
+/* Big Logo */
+/* .big_logo_row{
+	height: 200px;
+	transition: all .2s;
+}
+.fixed .big_logo_row{ 
+	height: 0px;
+	transition: all .2s;
+	display: none;
+}
+ */
+
+
 /* Instagram */
 .instagram{
 	-ms-flex-item-align: end;
@@ -15226,11 +15240,11 @@ a {
 .autocomplete-suggestions {
 	font-family:Custom-Font,Helvetica,Arial,sans-serif;
 }
-
+.always-visible-search {
+	padding-left: 0px !important;
+}
 @media only screen and (min-width: 768px) {
-	.always-visible-search {
-		padding-left: 0px !important;
-	}
+	
 	#page-header-parent .search-input {
 		max-width: 100% !important;
 	}
@@ -15401,9 +15415,10 @@ a {
     background-color: #e9ecef;
     border-color: #dee2e6;
 }
-.mobile-navigation {
+.mobile-navigation, .normalmenu .collapse  {
     background: var(--main-color);
 }
+
 
 /* Homepage */
 
@@ -15769,6 +15784,10 @@ background-color: #c2c2a87e !important;
 	margin-top:-50px;
 	max-width: 290px;
 }
+.cookie-bar.fixed-bottom .btn-appearance {
+    margin-left: 0px !important;
+    border-radius: 0 0 !important;
+}
 
 /* .footer .widget_hinweis_klein .fa, .footer .widget_hinweis_klein .far, .footer .widget_hinweis_klein .fas {
     font-family: "Font Awesome 5 Free";
@@ -16008,7 +16027,7 @@ body{
 
 #page-header-parent .search-input {
 
-    max-width: 225px;
+    // max-width: 225px;
 }
 .always-visible-search {
     padding-left: 73px;
