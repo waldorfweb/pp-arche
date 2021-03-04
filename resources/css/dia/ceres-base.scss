@@ -14930,6 +14930,7 @@ body.lb-disable-scrolling {
 	--bg-color:#595f4c; */
 	/* --main-color:#ED1C24; */
 	--main-color:#D31A20;
+	--maindark-color:#bb181d;
 	--mainsoft-color:#d31a20d4;
 	--bg-color:#aeae7f;
 	--bg-color2:#f4f4e8;
@@ -15408,14 +15409,17 @@ a {
 }
 
 
-.main-navbar-collapsable .mainmenu > li > a {
+.main-navbar-collapsable .mainmenu > li > a{
     padding: 1rem 0.5rem;
     /* color: #ED1C24; */
 	
-    font-size: 16px !important;
+    font-size: 1.2rem !important;
 	/* text-transform: uppercase; */
 	letter-spacing: 0;
 	font-weight: 300;
+}
+.main-navbar-collapsable{
+    font-size: 1.2rem !important;
 }
 
 .fixed .pure_menu{
@@ -15456,8 +15460,16 @@ a {
 }
 }
 
-.main-navbar-collapsable .mainmenu > li:hover, .main-navbar-collapsable .mainmenu > li.hover {
+.main-navbar-collapsable .mainmenu > li:hover, .main-navbar-collapsable .mainmenu > li.hover, .normalmenu .collapse-inner > li:hover{
     background-color: var(--main-color);
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	/* border-radius: 3px 3px 0 0; */
+}
+.normalmenu .collapse-inner > li:hover{
+    background-color: var(--main-color) !important;
+	-webkit-transition: all .2s;
+	transition: all .2s;
 	/* border-radius: 3px 3px 0 0; */
 }
 
@@ -15485,7 +15497,7 @@ a {
     border-color: #dee2e6;
 }
 .mobile-navigation, .normalmenu .collapse  {
-    background: var(--main-color);
+    background: var(--maindark-color)
 }
 
 
@@ -15701,6 +15713,13 @@ background-color: #c2c2a87e !important;
 }
 .widget-secondary .text-appearance {
     color: var(--main-color) !important;
+}
+
+.widget-primary .text-appearance.btn {
+    color: #ffffff !important;
+}
+.widget-primary a.text-appearance:focus {
+    color: white !important;
 }
 
 /* Kategorie Sidebar */
@@ -15976,6 +15995,9 @@ background-color: #c2c2a87e !important;
 	font-size: 14px;
     padding: 4px !important;
 	color: var(--top-color) !important;
+}
+.price-box.text-right {
+    min-width: 75px;
 }
 /* CSS after update ceres 5
 
