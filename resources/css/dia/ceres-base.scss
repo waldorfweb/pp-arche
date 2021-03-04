@@ -15742,6 +15742,19 @@ background-color: #c2c2a87e !important;
 .widget-add-to-wish-list {
 	margin-bottom:20px !important;
 }
+.naehrwertzeile .widget-text .widget-inner {
+	padding:0px;
+	border-bottom:1px solid #f2f2f2;
+	margin-bottom:6px;
+}
+.naehrwertzeile:last-child .widget-text .widget-inner {
+	padding:0px;
+	border-bottom:1px solid #f2f2f2;
+	margin-bottom:6px;
+}
+.naehrwertzeile .widget-inner p{
+	margin-bottom:0px;
+}
 
 /* footer  */
 
