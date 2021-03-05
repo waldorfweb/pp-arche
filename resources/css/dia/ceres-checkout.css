@@ -14763,6 +14763,19 @@ a {
 .price-box.text-right {
   min-width: 75px; }
 
+/* Content */
+.content_head .widget-image-box-no-caption {
+  height: 100.2% !important; }
+
+.content_body .list-unstyled {
+  color: var(--main-color); }
+
+.content_body h2 {
+  color: white !important; }
+
+.content_body .list-unstyled a {
+  color: var(--main-color) !important; }
+
 /* CSS after update ceres 5
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
