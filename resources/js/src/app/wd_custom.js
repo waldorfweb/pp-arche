@@ -87,69 +87,28 @@ $('.megamenu .level2').each(function(){
 	$(this).siblings( ".level2" ).addClass('navpfeil');
 });
 
-    //$('.badge').addClass('test');
 
-	// $('.page-singleitem .widget_badge .badge span').css('display', 'none');
-	// $('.page-singleitem .widget_badge .badge span').each(function () {
-        
-	//     if ($(this).text() == 'Spielgut') {
-    //         console.log('Spielgut');
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/spielgut.png" alt="Spielgut">');
-	//     }
-	//     if ($(this).text() == 'Werkstätten für Menschen mit Behinderung') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/logo_wd_werkstaetten_behindert.png" alt="Werkstätten für Menschen mit Behinderung">');
-	//     }
-	//     if ($(this).text() == 'NEU') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/neu.png" alt="NEU">');
-	//     }
-	//     if ($(this).text() == 'Bio') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/bio2.png" alt="Bio">');
-	//     }
-	//     if ($(this).text() == 'Katalog Frühjahr `20') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aktueller_katalog.png" alt="Aktueller Katalog">');
-	//     }
-	//     if ($(this).text() == 'Aktueller Katalog') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aktueller_katalog.png" alt="Aktueller Katalog">');
-	//     }
-	//     if ($(this).text() == 'Speditionsversand') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/spedition2.png" alt="Speditionsversand">');
-	//     }
-	//     if ($(this).text() == 'Englisch Sprachig') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/union_jack.png" alt="Englisch Sprachig">');
-	//     }
-	//     if ($(this).text() == 'Made in Germany') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/aus_deutschland.png" alt="Made in Germany">');
-	//     }
-	//     if ($(this).text() == 'Sperrgut') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/sperrgut2.png" alt="Sperrgut">');
-	//     }
-	//     if ($(this).text() == 'Bestseller') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/bestseller.png" alt="Bestseller">');
-	//     }
-	//     if ($(this).text() == '1tes Jahrsiebt') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/1tes-Jahrsiebt.png" alt="1tes Jahrsiebt">');
-	//     }
-	//     if ($(this).text() == '2tes Jahrsiebt') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2tes-Jahrsiebt.png" alt="2tes Jahrsiebt">');
-	//     }
-	//     if ($(this).text() == '3tes Jahrsiebt') {
-	//         $(this).css('display', 'block');
-	//         $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/3tes-Jahrsiebt.png" alt="3tes Jahrsiebt">');
-	//     }
-	// });
+        $('.page-singleitem .widget_badge .badge span').css('display', 'none');
+        $('.page-singleitem .widget_badge .badge span').each(function () {
+            
+                if ($(this).text() == 'Bio') {
+                $(this).css('display', 'block');
+                $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio-EU-Siegel.jpg" alt="Bio">');
+            }
+            if ($(this).text() == 'Bio-Siegel') {
+                $(this).css('display', 'block');
+                $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/Bio-EU-Siegel.jpg" alt="Bio-Siegel">');
+            }
+            if ($(this).text() == 'Vegan') {
+                $(this).css('display', 'block');
+                $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/vegan_rot.png" alt="Vegan">');
+            }
+            if ($(this).text() == 'Glutenfrei') {
+                console.log('Spielgut');
+                $(this).css('display', 'block');
+                $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/glutenfrei_rot.png" alt="Glutenfrei">');
+            }  
+        });
 
 
 //Tooltip Varianten Farben
