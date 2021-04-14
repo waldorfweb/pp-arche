@@ -16353,6 +16353,12 @@ background-color: #c2c2a87e !important;
     color: var(--main-color) !important;
 }
 
+.widget_badge .badge {
+    width: 80px !important;
+    height: auto;
+    background: none !important;
+}
+
 /* footer  */
 
 .dia-footer {

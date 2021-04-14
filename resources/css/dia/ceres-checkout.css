@@ -14515,6 +14515,11 @@ a {
 .single .nav-tabs .nav-link.active, .single .nav-tabs .nav-link:focus, .single .nav-tabs .nav-link:active {
   color: var(--main-color) !important; }
 
+.widget_badge .badge {
+  width: 80px !important;
+  height: auto;
+  background: none !important; }
+
 /* footer  */
 .dia-footer {
   border-top: 14px solid var(--main-color);
