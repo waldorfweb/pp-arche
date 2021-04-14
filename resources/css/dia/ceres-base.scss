@@ -15775,6 +15775,10 @@ background-color: #c2c2a87e !important;
 	margin-bottom:0px;
 }
 
+.single .nav-tabs .nav-link.active, .single .nav-tabs .nav-link:focus, .single .nav-tabs .nav-link:active {
+    color: var(--main-color) !important;
+}
+
 /* footer  */
 
 .dia-footer {
