@@ -780,6 +780,10 @@ background-color: #c2c2a87e !important;
     color: white !important;
 }
 
+.widget-primary a.text-appearance:focus {
+    color: var(--main-color) !important;
+}
+
 /* Kategorie Sidebar */
 
 .sidebar-categories ul li a[href], .widget-navigation-tree ul li a[href] {
@@ -861,9 +865,14 @@ background-color: #c2c2a87e !important;
 .footerlogo{
 	/* margin-left: calc(100% - 30vw); */
     max-width: 300px;
-	margin-top:-40px;
+	/*margin-top:-40px;*/
 	/* margin-left:-60px; */
+	margin:0 auto;
 }
+}
+.footerlogo_wrapper {
+    background: white;
+    display: none;
 }
 .dia-footer a {
     margin-right: 10px;
