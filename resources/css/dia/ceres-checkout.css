@@ -14448,7 +14448,7 @@ a {
   border-color: transparent var(--top-color) transparent transparent !important; }
 
 .widget-wish-list:before {
-  content: "Deine Wunschliste";
+  content: "Ihre Wunschliste";
   background: var(--top-color);
   color: white;
   font-size: 24px;
