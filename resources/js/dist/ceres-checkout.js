@@ -81089,9 +81089,9 @@ $(window).on("load", function () {
     }
 
     if ($(this).text() == 'Ecofriednly') {
-      console.log('Spielgut');
+      console.log('Ecofriednly');
       $(this).css('display', 'block');
-      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/ARCHE-ecofriendly-Siegel-3.png" alt="Glutenfrei">');
+      $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Arche/Icons/ARCHE-ecofriendly-Siegel-3.png" alt="Ecofriednly">');
     }
   }); //Tooltip Varianten Farben
 
