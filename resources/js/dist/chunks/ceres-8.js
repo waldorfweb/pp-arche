@@ -164,13 +164,13 @@ var createMethod = function (TYPE) {
 
 module.exports = {
   // `String.prototype.{ trimLeft, trimStart }` methods
-  // https://tc39.github.io/ecma262/#sec-string.prototype.trimstart
+  // https://tc39.es/ecma262/#sec-string.prototype.trimstart
   start: createMethod(1),
   // `String.prototype.{ trimRight, trimEnd }` methods
-  // https://tc39.github.io/ecma262/#sec-string.prototype.trimend
+  // https://tc39.es/ecma262/#sec-string.prototype.trimend
   end: createMethod(2),
   // `String.prototype.trim` method
-  // https://tc39.github.io/ecma262/#sec-string.prototype.trim
+  // https://tc39.es/ecma262/#sec-string.prototype.trim
   trim: createMethod(3)
 };
 
@@ -208,14 +208,14 @@ var arrayMethodUsesToLength = __webpack_require__(/*! ../internals/array-method-
 var USES_TO_LENGTH = arrayMethodUsesToLength('indexOf', { ACCESSORS: true, 1: 0 });
 
 // `Array.prototype.includes` method
-// https://tc39.github.io/ecma262/#sec-array.prototype.includes
+// https://tc39.es/ecma262/#sec-array.prototype.includes
 $({ target: 'Array', proto: true, forced: !USES_TO_LENGTH }, {
   includes: function includes(el /* , fromIndex = 0 */) {
     return $includes(this, el, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
 
-// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+// https://tc39.es/ecma262/#sec-array.prototype-@@unscopables
 addToUnscopables('includes');
 
 
@@ -253,7 +253,7 @@ var NumberPrototype = NativeNumber.prototype;
 var BROKEN_CLASSOF = classof(create(NumberPrototype)) == NUMBER;
 
 // `ToNumber` abstract operation
-// https://tc39.github.io/ecma262/#sec-tonumber
+// https://tc39.es/ecma262/#sec-tonumber
 var toNumber = function (argument) {
   var it = toPrimitive(argument, false);
   var first, third, radix, maxCode, digits, length, index, code;
@@ -282,7 +282,7 @@ var toNumber = function (argument) {
 };
 
 // `Number` constructor
-// https://tc39.github.io/ecma262/#sec-number-constructor
+// https://tc39.es/ecma262/#sec-number-constructor
 if (isForced(NUMBER, !NativeNumber(' 0o1') || !NativeNumber('0b1') || NativeNumber('+0x1'))) {
   var NumberWrapper = function Number(value) {
     var it = arguments.length < 1 ? 0 : value;
@@ -297,7 +297,9 @@ if (isForced(NUMBER, !NativeNumber(' 0o1') || !NativeNumber('0b1') || NativeNumb
     'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
     // ES2015 (in case, if modules with ES2015 Number statics required before):
     'EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,' +
-    'MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger'
+    'MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger,' +
+    // ESNext
+    'fromString,range'
   ).split(','), j = 0, key; keys.length > j; j++) {
     if (has(NativeNumber, key = keys[j]) && !has(NumberWrapper, key)) {
       defineProperty(NumberWrapper, key, getOwnPropertyDescriptor(NativeNumber, key));
